@@ -1,0 +1,39 @@
+Analyse lexicale (Tokenization) : Vous devez découper l'entrée en tokens
+(mots, symboles, etc.) en fonction des règles de grammaire définies.
+Cela vous permettra de comprendre les différentes parties de la commande
+entrée par l'utilisateur.
+
+Analyse syntaxique (Parsing) : Une fois que vous avez les tokens, vous 
+devez les organiser selon les règles de grammaire de votre shell. Vous 
+allez construire une structure de données qui représente la structure 
+hiérarchique de la commande, sous forme de listchaine.
+
+Exécution des commandes : Une fois que vous avez interprété la commande,
+vous devez exécuter les actions correspondantes. Cela implique de lancer
+des programmes externes, de gérer les redirections d'entrée/sortie, les
+pipelines, etc.
+
+Gestion des erreurs : Votre shell doit être capable de gérer les erreurs
+telles que les commandes inconnues, les permissions insuffisantes, les
+erreurs de syntaxe, etc.
+
+Gestion des signaux : Vous devez prendre en charge les signaux comme
+SIGINT (Ctrl+C), SIGQUIT (Ctrl+), et SIGTERM pour permettre au shell
+de réagir correctement lorsque ces signaux sont reçus.
+
+Historique des commandes : Vous pouvez mettre en place un historique
+pour enregistrer et rappeler les commandes précédemment exécutées.
+
+Variables d'environnement : Vous devez gérer les variables
+d'environnement comme $PATH, $HOME, etc., et permettre leur
+expansion dans les commandes.
+
+Redirections et Pipes : Implémentez la fonctionnalité pour gérer les
+redirections d'entrée/sortie (<, >, >>) et les pipes (|).
+
+Commandes internes : Implémentez les commandes internes
+comme cd, echo, exit, etc., qui sont exécutées par
+le shell lui-même plutôt que d'appeler des programmes externes.
+
+Gestion de la mémoire : Assurez-vous de gérer correctement la mémoire pour
+éviter les fuites de mémoire et autres problèmes liés à la mémoire
